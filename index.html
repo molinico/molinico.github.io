@@ -1,0 +1,200 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Interno - Grupo de Investigación</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            scroll-behavior: smooth; /* Desplazamiento suave entre secciones */
+        }
+
+        /* Barra lateral izquierda */
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            color: white;
+            padding-top: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            padding: 0 15px;
+            color: #ecf0f1;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #bdc3c7;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+            color: #fff;
+            border-left: 4px solid #3498db;
+        }
+
+        /* Contenido principal */
+        .content {
+            margin-left: 250px;
+            padding: 40px;
+            max-width: 1000px;
+        }
+
+        /* Secciones */
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+
+        ul {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            background-color: #e8f4f8;
+            color: #2980b9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Diseño de propuestas */
+        .propuesta-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            background-color: #fafafa;
+        }
+
+        .propuesta-card h4 {
+            margin-top: 0;
+            color: #27ae60;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>Grupo de Investigación</h2>
+        <a href="#inicio">Inicio</a>
+        <a href="#papers">Papers de Interés</a>
+        <a href="#conferencias">Conferencias</a>
+        <a href="#becas">Becas Recibidas</a>
+        <a href="#estadias">Estadías Realizadas</a>
+        <a href="#propuestas">Propuestas de Proyectos</a>
+    </nav>
+
+    <main class="content">
+
+        <section id="inicio">
+            <h1>Bienvenido al Portal del Grupo</h1>
+            <p>Esta página sirve como repositorio central de información, currículum vitae colectivo y base de datos de los logros y recursos bibliográficos de nuestro grupo de investigación.</p>
+        </section>
+
+        <section id="papers">
+            <h1>Papers de Interés</h1>
+            <p>Recopilación de literatura relevante dividida por nuestras líneas de investigación principales.</p>
+            
+            <h3>Tema 1: Inteligencia Artificial y Datos</h3>
+            <ul>
+                <li><span class="tag">Machine Learning</span> Autor, A. et al. (2025). "Título del paper sobre redes neuronales". <em>Journal of AI</em>. <a href="#">Enlace</a></li>
+                <li><span class="tag">Big Data</span> Autor, B. (2024). "Procesamiento masivo de datos en tiempo real". <em>Data Science Review</em>. <a href="#">Enlace</a></li>
+            </ul>
+
+            <h3>Tema 2: Energías Renovables</h3>
+            <ul>
+                <li><span class="tag">Solar</span> Investigador, C. (2026). "Avances en eficiencia de paneles solares". <em>Renewable Energy</em>. <a href="#">Enlace</a></li>
+            </ul>
+        </section>
+
+        <section id="conferencias">
+            <h1>Conferencias</h1>
+            <p>Eventos académicos en los que hemos participado como grupo o individualmente.</p>
+            <ul>
+                <li><strong>Conferencia Internacional de Ciencias Aplicadas 2025</strong> - <em>Madrid, España</em>. Presentación oral: "Impacto de nuevas tecnologías".</li>
+                <li><strong>Simposio Nacional de Investigación 2024</strong> - <em>Buenos Aires, Argentina</em>. Presentación de Póster.</li>
+            </ul>
+        </section>
+
+        <section id="becas">
+            <h1>Becas Recibidas</h1>
+            <p>Registro de financiamiento y apoyo académico obtenido por los miembros del grupo.</p>
+            <ul>
+                <li><strong>Beca Doctoral CONICET (2023-2028)</strong> - Otorgada a [Nombre del Investigador].</li>
+                <li><strong>Beca de Movilidad Internacional Erasmus+ (2025)</strong> - Otorgada a [Nombre del Investigador].</li>
+            </ul>
+        </section>
+
+        <section id="estadias">
+            <h1>Estadías Realizadas</h1>
+            <p>Intercambios y visitas de investigación en otras instituciones.</p>
+            <ul>
+                <li><strong>Universidad Politécnica de Cataluña</strong> (Marzo 2025 - Junio 2025). Tema: Modelado de sistemas complejos. Realizada por: [Nombre].</li>
+                <li><strong>MIT Media Lab</strong> (Octubre 2024). Tema: Interacción Humano-Computadora. Realizada por: [Nombre].</li>
+            </ul>
+        </section>
+
+        <section id="propuestas">
+            <h1>Propuestas de Proyectos de Investigación</h1>
+            <p>Ideas y proyectos en fase de formulación o en búsqueda de tesistas/colaboradores.</p>
+
+            <div class="propuesta-card">
+                <h4>Proyecto: Algoritmos predictivos para cambio climático</h4>
+                <p><strong>Perfil buscado:</strong> Estudiante de posgrado o becario posdoctoral con conocimientos en Python y meteorología.</p>
+                <p><strong>Descripción:</strong> El proyecto busca desarrollar modelos de machine learning que puedan predecir anomalías térmicas a nivel regional utilizando datos satelitales de los últimos 20 años.</p>
+                <p><strong>Contacto:</strong> dr.apellido@universidad.edu</p>
+            </div>
+
+            <div class="propuesta-card">
+                <h4>Proyecto: Nuevos materiales para baterías de estado sólido</h4>
+                <p><strong>Perfil buscado:</strong> Estudiante avanzado de Química, Física o Ingeniería de Materiales para tesis de grado.</p>
+                <p><strong>Descripción:</strong> Síntesis y caracterización de polímeros conductores para mejorar la estabilidad térmica de las celdas de almacenamiento.</p>
+                <p><strong>Contacto:</strong> dra.apellido@universidad.edu</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
