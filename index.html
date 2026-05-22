@@ -25,6 +25,7 @@
             color: white;
             padding-top: 20px;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            z-index: 100;
         }
 
         .sidebar h2 {
@@ -204,6 +205,146 @@
             text-decoration: underline;
         }
 
+        /* Estilo para el banner de ejemplo de Lab 6 y 7 */
+        .ejemplo-banner {
+            background-color: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            color: #2c3e50;
+        }
+
+        .ejemplo-banner a {
+            color: #2980b9;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .ejemplo-banner a:hover {
+            text-decoration: underline;
+        }
+
+        /* ======================== */
+        /* ESTILOS RESPONSIVE        */
+        /* ======================== */
+
+        /* Tablets y pantallas medianas */
+        @media (max-width: 900px) {
+            .sidebar {
+                width: 200px;
+            }
+
+            .content {
+                margin-left: 200px;
+                padding: 25px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+
+        /* Móviles */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 10px 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+
+            .sidebar h2 {
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 1rem;
+            }
+
+            .sidebar a {
+                padding: 10px 12px;
+                font-size: 0.85rem;
+                border-left: none;
+                text-align: center;
+            }
+
+            .sidebar a:hover {
+                border-left: none;
+                background-color: #34495e;
+                border-radius: 4px;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 15px;
+                max-width: 100%;
+            }
+
+            section {
+                padding: 20px 15px;
+                margin-bottom: 25px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            .contacto-card {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .contacto-item {
+                min-width: auto;
+            }
+
+            .btn-drive {
+                display: block;
+                text-align: center;
+                margin: 15px auto;
+            }
+        }
+
+        /* Pantallas muy pequeñas */
+        @media (max-width: 480px) {
+            .sidebar a {
+                padding: 8px 10px;
+                font-size: 0.78rem;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            section {
+                padding: 15px 12px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            .propuesta-card {
+                padding: 15px;
+            }
+
+            .propuesta-card h4 {
+                font-size: 1rem;
+            }
+
+            ul {
+                padding-left: 18px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -269,7 +410,14 @@ Nicolás centra su trabajo en el desarrollo de heteroestructuras de GaAs/AlGaAs 
 
         <section id="propuestas">
             <h1>Propuestas de Proyectos de Investigación</h1>
-            <p>Si estás buscando un espacio para la realización de tu <strong>Laboratorio 6</strong>, <strong>Laboratorio 7</strong>, tu <strong>Tesis de Licenciatura</strong> o para iniciar un <strong>Doctorado en Física</strong> en el área de física experimental de la materia condensada y metrología cuántica, nuestro grupo desarrolla investigación de frontera utilizando heteroestructuras semiconductoras de GaAs bajo condiciones criogénicas extremas.</p>
+            
+
+
+            <p>Si estás buscando un espacio para realizar de tu <strong>Laboratorio 6</strong>, <strong>Laboratorio 7</strong>, tu <strong>Tesis de Licenciatura</strong> o para iniciar un <strong>Doctorado en Física</strong> en el área de física experimental de la materia condensada y metrología cuántica, nuestro grupo desarrolla investigación de frontera utilizando heteroestructuras semiconductoras de GaAs bajo condiciones criogénicas extremas.</p>
+            <div class="ejemplo-banner">
+                📄 <strong>¿Querés ver un ejemplo concreto?</strong> Elian Urtubey y Federico Huxhagen realizaron sus <strong>Laboratorios 6 y 7</strong> con nuestro grupo. Podés consultar su trabajo acá: 
+                <a href="https://drive.google.com/file/d/1ludBPanaYpkbStXWPcDo66iuFaHxaQQc/view?usp=drive_link" target="_blank">Ver ejemplo de Laboratorio 6 y 7 (Google Drive)</a>
+            </div>
             <p>A continuación, se detallan nuestras cuatro líneas de investigación principales:</p>
 
             <div class="propuesta-card">
@@ -341,7 +489,7 @@ Nicolás centra su trabajo en el desarrollo de heteroestructuras de GaAs/AlGaAs 
 
                 <div class="contacto-item">
                     <strong>Mariano Real</strong>
-                    <span class="rol">Director – Dto. de Metrología Cuántica, INTI</span>
+                    <span class="rol">Director – Dpto. de Metrología Cuántica, INTI</span>
                     <a href="mailto:mreal@inti.gob.ar">✉️ mreal@inti.gob.ar</a>
                 </div>
 
