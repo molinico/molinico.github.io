@@ -156,6 +156,54 @@
             margin-top: 5px;
         }
 
+        /* Estilos para la sección de contacto */
+        .contacto-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .contacto-item {
+            background-color: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            min-width: 220px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .contacto-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .contacto-item strong {
+            display: block;
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .contacto-item .rol {
+            display: block;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        .contacto-item a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-all;
+        }
+
+        .contacto-item a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
@@ -168,16 +216,20 @@
         <a href="#conferencias">Conferencias</a>
         <a href="#estadias">Estadías Realizadas</a>
         <a href="#propuestas">Propuestas de Proyectos</a>
+        <a href="#contacto">Contacto</a>
     </nav>
 
     <main class="content">
 
         <section id="inicio">
             <h1>Bienvenido al portal del grupo QHall</h1>
-            <p>Somos un equipo especializado en Efecto Hall Cuántico, integrado por Paula Giudici, Mariano Real y Nicolás Molina.
-            Paula y Mariano son doctores en Física y comparten una sólida trayectoria internacional en laboratorios de primer nivel como PTB (Alemania), NIST (Estados Unidos), el Instituto Max Planck e institutos de investigación en Japón.
-            Paula se desempeña como investigadora en la CNEA y el CONICET, mientras que Mariano es el director del Departamento de Metrología Cuántica del INTI.
-            Nicolás, becario doctoral, centra su trabajo en el desarrollo de heteroestructuras de GaAs/AlGaAs y en la producción de muestras 100 % argentinas para experimentos de transporte cuántico.</p>
+            <p>Somos un grupo especializado en Efecto Hall Cuántico, integrado por Paula Giudici, Mariano Real y Nicolás Molina.
+
+Paula y Mariano son doctores en Física y comparten una sólida trayectoria internacional en laboratorios de primer nivel como PTB (Alemania), NIST (Estados Unidos), el Instituto Max Planck e institutos de investigación en Japón.
+
+Paula es investigadora del CONICET con lugar de trabajo en el Instituto de Nanociencia y Nanotecnología (INN), nodo CNEA, y tanto ella como Nicolás son miembros del Departamento de Física de la Materia Condensada de la CNEA. Mariano, por su parte, se desempeña como director del Departamento de Metrología Cuántica del INTI.
+
+Nicolás centra su trabajo en el desarrollo de heteroestructuras de GaAs/AlGaAs y en la producción de muestras 100 % argentinas para experimentos de transporte cuántico.</p>
         </section>
 
         <section id="papers">
@@ -234,7 +286,7 @@
                 <h4>2. Transporte Termoeléctrico y Fenómenos de Enfriamiento en Geometría de Corbino</h4>
                 <p>Exploración fundamental de la interacción y acoplamiento entre el transporte de carga y el flujo de calor en el régimen del Efecto Hall Cuántico.</p>
                 <ul>
-                    <li><strong>Metodología:</strong> Utilización de dispositivos con geometría de Corbino (anillos concéntricos) para el estudio intrínseco de efectos termoeléctricos (coeficientes Seebeck y Peltier) en el bulk del sistema, aislando por completo las contribuciones espurias de los canales de borde (edge channels). Los gradientes térmicos microscópicos se inducen a través de calentadores locales integrados en el chip para evaluar la respuesta del gas bidimensional de electrones (2DEG).</li>
+                    <li><strong>Metodología:</strong> Utilización de dispositivos con geometría de Corbino para el estudio intrínseco de efectos termoeléctricos en el bulk del sistema. Los gradientes térmicos microscópicos se inducen a través de calentadores locales integrados en el chip para evaluar la respuesta del gas bidimensional de electrones (2DEG).</li>
                     <li><strong>Impacto:</strong> Caracterización del transporte puramente difusivo en el bulk y optimización de la eficiencia termoeléctrica para aproximarse a figuras de mérito térmico competitivas (ZT &gt; 1). El proyecto busca evaluar la viabilidad del "Landau cooling", orientándose al desarrollo de sistemas de refrigeración termoeléctrica de estado sólido en el régimen sub-Kelvin (temperaturas de milikelvin).</li>
                 </ul>
                 <p>➔ <a href="https://drive.google.com/drive/folders/1MxpVMEI0OTWQDrAozwzw1s5aqP3y3K1I?usp=sharing" target="_blank" class="link-detalle">📂 Acceder a Bibliografía Específica - Geometría de Corbino (Google Drive)</a></p>
@@ -274,6 +326,31 @@
                 <li><strong>Modelado y Simulación Numérica:</strong> Desarrollo de modelos numéricos por elementos finitos (FEM) para resolver perfiles de difusión térmica, gradientes de potencial electroquímico y transporte electrónico balístico/difusivo.</li>
             </ul>
             <p><em>Si estás interesado en sumarte a alguna de estas líneas de investigación o realizar consultas específicas, no dudes en ponerte en contacto con nosotros.</em></p>
+        </section>
+
+        <section id="contacto">
+            <h1>Contacto</h1>
+            <p>Podés comunicarte directamente con cualquiera de los integrantes del grupo a través de los siguientes correos electrónicos:</p>
+            
+            <div class="contacto-card">
+                <div class="contacto-item">
+                    <strong>Paula Giudici</strong>
+                    <span class="rol">Investigadora INN-CNEA / CONICET</span>
+                    <a href="mailto:paulagiudici@cnea.gob.ar">✉️ paulagiudici@cnea.gob.ar</a>
+                </div>
+
+                <div class="contacto-item">
+                    <strong>Mariano Real</strong>
+                    <span class="rol">Director – Dto. de Metrología Cuántica, INTI</span>
+                    <a href="mailto:mreal@inti.gob.ar">✉️ mreal@inti.gob.ar</a>
+                </div>
+
+                <div class="contacto-item">
+                    <strong>Nicolás Molina</strong>
+                    <span class="rol">Becario Doctoral – INN / DFMC, CNEA</span>
+                    <a href="mailto:nicoagustinmol@gmail.com">✉️ nicoagustinmol@gmail.com</a>
+                </div>
+            </div>
         </section>
 
     </main>
