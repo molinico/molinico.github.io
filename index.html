@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -97,6 +97,41 @@
             margin-right: 10px;
         }
 
+        /* Botones para Google Drive y archivos */
+        .btn-drive {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 15px 0;
+            transition: background 0.3s ease;
+        }
+
+        .btn-drive:hover {
+            background-color: #219653;
+        }
+
+        .btn-repositorio {
+            background-color: #f39c12;
+        }
+
+        .btn-repositorio:hover {
+            background-color: #d35400;
+        }
+
+        .link-detalle {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link-detalle:hover {
+            text-decoration: underline;
+        }
+
         /* Diseño de propuestas */
         .propuesta-card {
             border: 1px solid #ddd;
@@ -108,7 +143,10 @@
 
         .propuesta-card h4 {
             margin-top: 0;
-            color: #27ae60;
+            color: #2c3e50;
+            font-size: 1.15rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
         }
 
     </style>
@@ -118,9 +156,9 @@
     <nav class="sidebar">
         <h2>Grupo de Investigación</h2>
         <a href="#inicio">Inicio</a>
-        <a href="#papers">Papers de Interés</a>
+        <a href="#papers">Papers del Grupo</a>
+        <a href="#repositorio">Repositorio Digital</a>
         <a href="#conferencias">Conferencias</a>
-        <a href="#becas">Becas Recibidas</a>
         <a href="#estadias">Estadías Realizadas</a>
         <a href="#propuestas">Propuestas de Proyectos</a>
     </nav>
@@ -133,19 +171,23 @@
         </section>
 
         <section id="papers">
-            <h1>Papers de Interés</h1>
-            <p>Recopilación de literatura relevante dividida por nuestras líneas de investigación principales.</p>
+            <h1>Papers del Grupo</h1>
+            <p>Accedé a la carpeta compartida de Google Drive para ver y descargar todas las publicaciones, borradores y artículos científicos de nuestro equipo:</p>
             
-            <h3>Tema 1: Inteligencia Artificial y Datos</h3>
+            <a href="#" target="_blank" class="btn-drive">📁 Acceder a Carpeta de Papers (Google Drive)</a>
+            
+            <h3>Temas Principales:</h3>
             <ul>
-                <li><span class="tag">Machine Learning</span> Autor, A. et al. (2025). "Título del paper sobre redes neuronales". <em>Journal of AI</em>. <a href="#">Enlace</a></li>
-                <li><span class="tag">Big Data</span> Autor, B. (2024). "Procesamiento masivo de datos en tiempo real". <em>Data Science Review</em>. <a href="#">Enlace</a></li>
+                <li><span class="tag">Línea 1</span> Inteligencia Artificial y Procesamiento de Datos.</li>
+                <li><span class="tag">Línea 2</span> Modelado y simulación de sistemas complejos.</li>
             </ul>
+        </section>
 
-            <h3>Tema 2: Energías Renovables</h3>
-            <ul>
-                <li><span class="tag">Solar</span> Investigador, C. (2026). "Avances en eficiencia de paneles solares". <em>Renewable Energy</em>. <a href="#">Enlace</a></li>
-            </ul>
+        <section id="repositorio">
+            <h1>Repositorio Digital</h1>
+            <p>Base de datos centralizada del grupo. Aquí se encuentran alojados los datasets, códigos de programación (scripts), minutas de reuniones y material complementario de soporte:</p>
+            
+            <a href="#" target="_blank" class="btn-drive btn-repositorio">📦 Acceder al Repositorio Digital (Google Drive)</a>
         </section>
 
         <section id="conferencias">
@@ -154,15 +196,6 @@
             <ul>
                 <li><strong>Conferencia Internacional de Ciencias Aplicadas 2025</strong> - <em>Madrid, España</em>. Presentación oral: "Impacto de nuevas tecnologías".</li>
                 <li><strong>Simposio Nacional de Investigación 2024</strong> - <em>Buenos Aires, Argentina</em>. Presentación de Póster.</li>
-            </ul>
-        </section>
-
-        <section id="becas">
-            <h1>Becas Recibidas</h1>
-            <p>Registro de financiamiento y apoyo académico obtenido por los miembros del grupo.</p>
-            <ul>
-                <li><strong>Beca Doctoral CONICET (2023-2028)</strong> - Otorgada a [Nombre del Investigador].</li>
-                <li><strong>Beca de Movilidad Internacional Erasmus+ (2025)</strong> - Otorgada a [Nombre del Investigador].</li>
             </ul>
         </section>
 
@@ -177,20 +210,30 @@
 
         <section id="propuestas">
             <h1>Propuestas de Proyectos de Investigación</h1>
-            <p>Ideas y proyectos en fase de formulación o en búsqueda de tesistas/colaboradores.</p>
+            <p>Ideas, líneas de trabajo en fase de formulación y convocatorias abiertas para estudiantes interesados en sumarse al grupo.</p>
 
             <div class="propuesta-card">
-                <h4>Proyecto: Algoritmos predictivos para cambio climático</h4>
-                <p><strong>Perfil buscado:</strong> Estudiante de posgrado o becario posdoctoral con conocimientos en Python y meteorología.</p>
-                <p><strong>Descripción:</strong> El proyecto busca desarrollar modelos de machine learning que puedan predecir anomalías térmicas a nivel regional utilizando datos satelitales de los últimos 20 años.</p>
-                <p><strong>Contacto:</strong> dr.apellido@universidad.edu</p>
+                <h4>Proyecto A: Algoritmos predictivos para cambio climático</h4>
+                <p><strong>Aspectos generales del proyecto:</strong></p>
+                <ul>
+                    <li>Desarrollo de modelos predictivos regionales basados en Machine Learning.</li>
+                    <li>Análisis y procesamiento de datos satelitales históricos.</li>
+                    <li>Orientado a perfiles con conocimientos en Python o Ciencia de Datos.</li>
+                </ul>
+                <p>➔ <a href="#" target="_blank" class="link-detalle">Ver descripción completa y requisitos del proyecto (PDF)</a></p>
+                <p><strong>Contacto / Tutor:</strong> dr.apellido@universidad.edu</p>
             </div>
 
             <div class="propuesta-card">
-                <h4>Proyecto: Nuevos materiales para baterías de estado sólido</h4>
-                <p><strong>Perfil buscado:</strong> Estudiante avanzado de Química, Física o Ingeniería de Materiales para tesis de grado.</p>
-                <p><strong>Descripción:</strong> Síntesis y caracterización de polímeros conductores para mejorar la estabilidad térmica de las celdas de almacenamiento.</p>
-                <p><strong>Contacto:</strong> dra.apellido@universidad.edu</p>
+                <h4>Proyecto B: Nuevos materiales para baterías de estado sólido</h4>
+                <p><strong>Aspectos generales del proyecto:</strong></p>
+                <ul>
+                    <li>Síntesis química y caracterización en laboratorio de nuevos polímeros conductores.</li>
+                    <li>Enfoque experimental enfocado en la mejora de la estabilidad térmica.</li>
+                    <li>Disponible para tesis de grado en Ingeniería, Química o Física.</li>
+                </ul>
+                <p>➔ <a href="#" target="_blank" class="link-detalle">Ver descripción completa y requisitos del proyecto (PDF)</a></p>
+                <p><strong>Contacto / Tutor:</strong> dra.apellido@universidad.edu</p>
             </div>
         </section>
 
